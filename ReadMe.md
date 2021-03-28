@@ -8,7 +8,8 @@ Made with Python + Tkinter and a couple of other default modules, code is pretty
 > - [ ] I'll add more features,  the first 3 are the main focus though
 
 # Usage:
+### Warning: all files must be in the same directory for the music player to work
 1. Download [python](https://www.python.org/)
 2. Download the [repository](https://github.com/s-aa-mmm/YoutubeMusicPlayer)
 3. Install modules listed in ['requirements.txt'](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/requirements.txt)
-4. Then from terminal you can do * 'python3 MusicPlayer.py' * or you can double click the * 'MusicPlayer.py' * [file](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/MusicPlayer.py)
+4. Then from terminal you can do ** 'python3 MusicPlayer.py' ** or you can double click the ** 'MusicPlayer.py' ** [file](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/MusicPlayer.py)
