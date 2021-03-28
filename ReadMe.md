@@ -3,6 +3,8 @@ Made with Python + Tkinter and a couple of other default modules, code is pretty
 
 # To Do:
 > - [ ] Improve code 
+> - [ ] Previous/Next song button
+> - [ ] Remeber previous playlist
 > - [ ] Button to move to certain time on audio of video
 > - [ ] Better UI
 > - [ ] I'll add more features,  the first 3 are the main focus though
