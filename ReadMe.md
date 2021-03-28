@@ -13,3 +13,6 @@ Made with Python + Tkinter and a couple of other default modules, code is pretty
 2. Download the [repository](https://github.com/s-aa-mmm/YoutubeMusicPlayer)
 3. Install modules listed in ['requirements.txt'](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/requirements.txt)
 4. Then from terminal you can do **'python3 MusicPlayer.py'** or you can double click the **'MusicPlayer.py'** [file](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/MusicPlayer.py)
+
+# Image of UI:
+![alt text](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/images/MusicPlayer.jpg)
