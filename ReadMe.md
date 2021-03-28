@@ -5,7 +5,7 @@ Made with Python + Tkinter and a couple of other default modules, code is pretty
 > - [ ] Improve code 
 > - [ ] Previous/Next song button
 > - [ ] Add video info to UI
-> - [ ] Remeber previous playlist
+> - [ ] Load data from previous sessions
 > - [ ] Button to move to certain time on audio of video
 > - [ ] Better UI
 > - [ ] I'll add more features,  the first 3 are the main focus though
