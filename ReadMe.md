@@ -2,8 +2,8 @@
 Made with Python + Tkinter and a couple of other default modules, code is pretty messy since I rushed it
 
 # To Do:
-> - [ ] Improve code 
-> - [ ] Previous/Next song button
+> - [x] Improve code 
+> - [x] Previous/Next song button
 > - [ ] Add video info to UI
 > - [ ] Load data from previous sessions
 > - [ ] Button to move to certain time on audio of video
