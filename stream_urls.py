@@ -7,12 +7,12 @@ from streamer_exceptions import InvalidPlaylist
 def playlist_urls(_playlist: str):
     try:
         plist = Playlist(_playlist)
+        return plist.video_urls
     except KeyError:
         raise InvalidPlaylist(_playlist)
-    return plist.video_urls
 
 
-def stream_url(_video: str, info=True):
+def get_stream_url(_video: str, info=False):
     """
     Returns streaming url
     _video = url to youtube video from which you want the streaming url
