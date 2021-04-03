@@ -8,9 +8,10 @@ Made with Python + Tkinter and a couple of other default modules, code is pretty
 > - [ ] Key bindings to next, previous, pause, play, etc buttons
 > - [ ] Add video info to UI
 > - [ ] Load data from previous sessions / + configuration file
-> - [ ] Button to move to certain time on audio of video
+> - [ ] Download song being played
+> - [ ] Slider to move to certain time on audio of video
 > - [x] Better UI
-> - [ ] I'll add more features,  the first 3 are the main focus though
+> - [ ] More features will almost certainly be added based on 
 
 # Usage:
 ### Warning: all files must be in the same directory for the music player to work
