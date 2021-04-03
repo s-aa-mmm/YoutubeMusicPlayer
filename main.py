@@ -136,7 +136,12 @@ class MusicPlayerUI(tk.Frame):
         self.future_songs = the_urls
         self.song_position = 0
         while not self.song_position > len(self.future_songs):
-            self.song = self.future_songs[self.song_position]
+            try:
+                self.song = self.future_songs[self.song_position]
+            except:
+                self.thread_count -= 1
+                return
+                # there are no more songs in the list!!!!!!!!!!!!!!!!!!!!!!!
             self.skip = False
             self.previous = False
             self.stream_url = get_stream_url(self.song)
