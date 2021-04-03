@@ -11,7 +11,7 @@ Made with Python + Tkinter and a couple of other default modules, code is pretty
 > - [ ] Download song being played
 > - [ ] Slider to move to certain time on audio of video
 > - [x] Better UI
-> - [ ] More features will almost certainly be added based on 
+> - [ ] More features will almost certainly be added
 
 # Usage:
 ### Warning: all files must be in the same directory for the music player to work
