@@ -12,10 +12,13 @@ class MusicPlayer:
         return self.player.audio_get_delay()
 
     def play_song(self, _song):
-        self.song = self.vlc_instance.media_new(_song)
-        self.player.set_media(self.song)
-        self.player.play()
-
+        try:
+            self.song = self.vlc_instance.media_new(_song)
+            self.player.set_media(self.song)
+            self.player.play()
+        except:
+            pass
+        
     def musicplayer_state(self):
         return self.player.get_state()
 
