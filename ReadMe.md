@@ -2,7 +2,7 @@
 Made with Python + Tkinter and a couple of other default modules, code is pretty messy since I rushed it
 
 # To Do:
-**Basic functionality reached, development will be slower**
+**Basic functionality reached, development of this project will be slowed**
 > - [x] Improve code 
 > - [x] Previous/Next song button
 > - [ ] Key bindings to next, previous, pause, play, etc buttons
