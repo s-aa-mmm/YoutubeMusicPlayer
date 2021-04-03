@@ -19,4 +19,4 @@ Made with Python + Tkinter and a couple of other default modules, code is pretty
 5. Then from terminal you can do **'python3 MusicPlayer.py'** or you can double click the **'MusicPlayer.py'** [file](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/MusicPlayer.py)
 
 # Image of UI:
-![alt text](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/images/MusicPlayer.jpg)
+![alt text](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/screenshots/ui_screenshot.jpg)
