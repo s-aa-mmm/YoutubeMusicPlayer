@@ -30,7 +30,7 @@ def get_stream_url(_video: str, info=False):
             "length": yt_video.length,
             "publish_date": yt_video.publish_date,
             "rating": yt_video.rating,
-            "thumbnail_url": yt_video,
+            "thumbnail_url": yt_video.thumbnail_url,
             "views": yt_video.views,
             }
         return _stream_url.url, _video_info
