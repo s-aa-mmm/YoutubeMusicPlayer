@@ -27,12 +27,12 @@ class MusicPlayerUI(tk.Frame):
 
         self.play_button = tk.PhotoImage(file=r"ui_images/playButton.png").subsample(15, 15)
         self.getinput = tk.Button(self,
-         image=self.play_button,
-         highlightthickness=1,
-         bd=1,
-         background="blue", 
-         activebackground="red", 
-         command=lambda: self.controller("play_button"))
+        image=self.play_button,
+        highlightthickness=1,
+        bd=1,
+        background="blue", 
+        activebackground="red", 
+        command=lambda: self.controller("play_button"))
         self.getinput.pack(side="top")
 
         self.shuffle_button = tk.PhotoImage(file=r"ui_images/shuffleButton.png").subsample(15, 15)
