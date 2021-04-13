@@ -1,5 +1,5 @@
 # Youtube Music Player 
-Made with Python + Tkinter and a couple of other default modules, [check requirements.txt](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/requirements.txt)
+Made with Python + Tkinter and a couple of other default modules (check [requirements.txt](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/requirements.txt))
 
 # Features:
 1. Simple UI that contains basic music player functions such as pause, unpause, volume, previous/next song for videos/playlists on youtube
