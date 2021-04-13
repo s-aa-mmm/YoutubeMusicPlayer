@@ -4,7 +4,7 @@ Made with Python + Tkinter and a couple of other default modules (check [require
 # Features:
 1. Simple UI that contains basic music player functions such as pause, unpause, volume, previous/next song for videos/playlists on youtube
 2. Global key binds which can be configured in "MusicPlayerConfig.txt" after running the main.py the config file will be created 
-3. The volume and music entry are automatically saved after the program is closed
+3. The volume and music entry are automatically saved after the program is closed for the next session
 
 # To Do:
 **Basic functionality reached, development of this project will be slowed**
