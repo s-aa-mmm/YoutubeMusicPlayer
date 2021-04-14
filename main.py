@@ -5,6 +5,8 @@ import threading
 import os
 import keyboard
 import platform
+import requests
+import gc
 from stream_urls import playlist_urls, get_stream_url
 from time import sleep
 from music_player import MusicPlayer
@@ -32,14 +34,20 @@ class MusicPlayerUI(tk.Frame):
 
 
     def read_session(self):
+        default_setting = [30, "Enter URL to playlist or video"]
         if os.path.isfile(self.path_base + self.session_file_name):
             with open(self.path_base + self.session_file_name, "r") as rs:
                 session_data = []
                 for rs_line in rs.readlines():
                     session_data.append(rs_line.strip())
-            return session_data
+            if len(session_data) == 0:
+                return default_setting 
+            elif not len(session_data) == 2:
+                return default_setting
+            elif len(session_data) == 2 and session_data[0].isdigit():
+                return session_data
         else:
-            return 30, "Enter URL to playlist or video"   
+            return default_setting   
 
 
     def background_bindings(self):
@@ -161,6 +169,11 @@ class MusicPlayerUI(tk.Frame):
 
     def play_input(self,  _shuffle: bool):
         self.source = self.entry1.get()
+        try:
+            test_input = requests.get(self.source)
+        except:
+            print(f"'{self.source}' --> Invalid Input")
+            return
         self.shuffle_choice = _shuffle
         self.music_player.stop_song()
         self.urls_from_source = []
@@ -175,6 +188,7 @@ class MusicPlayerUI(tk.Frame):
             self.playlist_order = self.urls_from_source
 
         self.play_the_music(self.playlist_order)
+        gc.collect()
 
 
     def play_the_music(self,  the_urls):
@@ -206,6 +220,7 @@ class MusicPlayerUI(tk.Frame):
                     break
                 elif self.thread_count > 1:
                     self.thread_count -= 1
+                    gc.collect()
                     return
                 else:
                     sleep(0.5)
@@ -260,5 +275,7 @@ Volume Down =
 
 
 if __name__ == "__main__":
+    gc.enable()
     main()
+    gc.disable()
     sys.exit()
