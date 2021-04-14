@@ -219,7 +219,7 @@ class MusicPlayerUI(tk.Frame):
 
 
 def main():
-    path_base = os.path.dirname(__file__) + "/"
+    path_base = os.path.dirname(os.path.abspath(__file__)) + "/"
     if not os.path.isfile(path_base + "MusicPlayerConfig.txt"):
         with open(path_base + "MusicPlayerConfig.txt", "w") as config_file:
             config_file.write("""#
