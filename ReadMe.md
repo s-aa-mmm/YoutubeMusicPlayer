@@ -19,6 +19,7 @@ Made with Python + Tkinter and a couple of other default modules (check [require
 
 # Usage:
 ### Warning: all files must be in the same directory for the music player to work
+- If you want it to run without the command prompt window you can change 'main.py' to 'main.pyw' 
 1. Download [python](https://www.python.org/)
 2. Download [VLC-player](https://www.videolan.org/vlc/index.en_GB.html)
 3. Download the [repository](https://github.com/s-aa-mmm/YoutubeMusicPlayer)
