@@ -4,6 +4,7 @@ import tkinter as tk
 import threading
 import os
 import keyboard
+import platform
 from stream_urls import playlist_urls, get_stream_url
 from time import sleep
 from music_player import MusicPlayer
@@ -245,7 +246,13 @@ Volume Down =
     width = 400
     height = 290
     root.geometry(f"{width}x{height}+{int(screen_width/2-width/2)}+{int(screen_height/2-height/2)}")
-    root.iconbitmap(path_base + r"ui_images/yt_player_ico.ico")
+
+    if platform.system() == "Windows":
+        root.iconbitmap(path_base + r"ui_images/yt_player_ico.ico")
+    elif platform.system() == "Linux":
+        linux_img = tk.PhotoImage(path_base + r"ui_images/yt_player_ico.ico")
+        root.tk.call('wm', 'iconphoto', root._w, linux_img)
+
     root.resizable(False, False)
     root.protocol("WM_DELETE_WINDOW", Music_Player.save_session)
 
