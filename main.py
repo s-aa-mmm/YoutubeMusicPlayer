@@ -29,7 +29,15 @@ class MusicPlayerUI(tk.Frame):
         self.session_volume, self.session_entry = self.read_session()
         self.background_bindings()
 
-        self.pack(pady=10)
+        self.master.song_name = tk.StringVar(master=self.master)
+        self.master.song_name_display = tk.Label(master=self.master, 
+        textvariable=self.master.song_name, 
+        bg="black", 
+        fg="green", 
+        width=50)
+        self.master.song_name_display.pack()
+
+        self.pack()
         self.create_widgets()
 
 
@@ -206,8 +214,9 @@ class MusicPlayerUI(tk.Frame):
                 return
             self.skip = False
             self.previous = False
-            self.stream_url = get_stream_url(self.song)
+            self.stream_url, song_info = get_stream_url(self.song, True)
             self.music_player.play_song(self.stream_url)
+            self.master.song_name.set(f"""{song_info["title"]}""")
             while True:
                 if self.skip:
                     break
@@ -259,7 +268,7 @@ Volume Down =
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
     width = 400
-    height = 290
+    height = 320
     root.geometry(f"{width}x{height}+{int(screen_width/2-width/2)}+{int(screen_height/2-height/2)}")
 
     if platform.system() == "Windows":
