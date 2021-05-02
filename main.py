@@ -89,6 +89,17 @@ class MusicPlayerUI(tk.Frame):
         self.entry1.insert(1, self.session_entry)
         self.entry1.pack(side="top")
 
+        self.checkbutton_state = tk.BooleanVar()
+        self.invert_playlist = tk.Checkbutton(self, 
+        text="Invert Playlist",
+        bg="black",
+        fg="red",
+        activebackground="red",
+        activeforeground="blue",
+        borderwidth=2,
+        variable=self.checkbutton_state)
+        self.invert_playlist.pack()
+
         self.play_button = tk.PhotoImage(file=self.path_base + r"ui_images/playButton.png").subsample(15, 15)
         self.getinput = tk.Button(self,
         image=self.play_button,
@@ -187,6 +198,8 @@ class MusicPlayerUI(tk.Frame):
         self.urls_from_source = []
         if "playlist" in self.source:
             self.urls_from_source = self.urls_from_source + playlist_urls(self.source)
+            if self.checkbutton_state:
+                self.urls_from_source.reverse()
         else:
             self.urls_from_source.append(self.source)
         
