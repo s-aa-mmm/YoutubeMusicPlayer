@@ -32,4 +32,4 @@ Made with Python + Tkinter and a couple of other default modules (check [require
 8. The keybinds configured in MusicPlayerConfig.txt are global and therefore work even without the music player interface in focus
 
 # Image of UI:
-![alt text](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/screenshots/ui_screenshot.jpg)
+![alt text](https://github.com/s-aa-mmm/YoutubeMusicPlayer/blob/main/screenshots/ui_image.png)
