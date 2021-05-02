@@ -229,7 +229,7 @@ class MusicPlayerUI(tk.Frame):
             self.previous = False
             self.stream_url, song_info = get_stream_url(self.song, True)
             self.music_player.play_song(self.stream_url)
-            self.master.song_name.set(f"""{song_info["title"]}""")
+            self.master.song_name.set(f"{song_info["title"]}")
             while True:
                 if self.skip:
                     break
@@ -266,6 +266,7 @@ def main():
 # Assign key binds to specific functions after '=' and seperate all key press combinations with '+'
 #
 # Eg: 'Next Song = ctrl+s', if left empty, no key binds will be assigned to the function
+# If you wish the key bind to include a + replace it with the word plus for eg ctrl+plus+s (same for any difficult key on the keyboard)
 #
 Next Song =
 Previous Song =
