@@ -11,8 +11,9 @@ Made with Python + Tkinter and a couple of other default modules (check [require
 > - [x] Improve code 
 > - [x] Previous/Next song button
 > - [x] Key bindings to next, previous, pause, play, etc buttons
-> - [ ] Add played youtube video information to UI
+> - [x] Add played youtube video information to UI
 > - [x] Load data from previous sessions / + configuration file
+> - [ ] Invert playlist
 > - [ ] Download song being played
 > - [ ] Slider to move to certain time on audio of video
 > - [ ] Better UI
