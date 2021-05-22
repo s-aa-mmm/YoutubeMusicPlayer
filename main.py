@@ -196,8 +196,10 @@ class MusicPlayerUI(tk.Frame):
         self.shuffle_choice = _shuffle
         self.music_player.stop_song()
         self.urls_from_source = []
+
         if "playlist" in self.source:
-            self.urls_from_source = self.urls_from_source + playlist_urls(self.source)
+            self.urls_from_source = list(playlist_urls(self.source))
+            print(self.urls_from_source)
             if self.checkbutton_state:
                 self.urls_from_source.reverse()
         else:
@@ -229,7 +231,7 @@ class MusicPlayerUI(tk.Frame):
             self.previous = False
             self.stream_url, song_info = get_stream_url(self.song, True)
             self.music_player.play_song(self.stream_url)
-            self.master.song_name.set(f"{song_info["title"]}")
+            self.master.song_name.set(f"""{song_info["title"]}""")
             while True:
                 if self.skip:
                     break
