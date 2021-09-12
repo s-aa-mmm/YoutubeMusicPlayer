@@ -123,7 +123,7 @@ class MusicPlayerUI(tk.Frame):
         self.volume_scale = tk.Scale(self, 
         fg="white", 
         orient="vertical", 
-        from_=120, 
+        from_=150, 
         to=0, 
         background="blue", 
         highlightthickness=0, 
